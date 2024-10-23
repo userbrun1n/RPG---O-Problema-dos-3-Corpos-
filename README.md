@@ -24,13 +24,17 @@ Esperamos que você se divirta bastante!
 
 Java 8 ou superior
 
+Ter o Virtual Studio Code instalado na versão mais recente
+
+Ter o Git instalado
+
 ## Como Jogar 'O problema dos 3 Corpos'?
 
 - Jeito 1:
 
 - `Passo 1`: Clonar o repositório
 
-Usando qualquer terminal que suporte os requisitos do sistema, como o cmd ou powershell do windows, por exemplo, você deve baixar todos os arquivos presentes no projeto, usando o "git clone". usando esse comando, todo o repositório será clonado para a sua máquina. Assim: 
+Uma vez dentro do Virtual Studio Code, usando o "Gitbash" como terminal, você deve baixar todos os arquivos presentes no projeto, usando o "git clone". usando esse comando, todo o repositório será clonado para a sua máquina. Assim: 
 
 "`git clone https://github.com/userbrun1n/RPG---O-Problema-dos-3-Corpos-.git`" #Primeiro Comando
 
