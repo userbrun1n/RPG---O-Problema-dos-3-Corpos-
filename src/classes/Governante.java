@@ -1,8 +1,12 @@
 package classes;
 import java.util.Scanner;
 
+import interfaces.Lideranca;
+
 public class Governante extends Personagem implements Lideranca{
     private int credibilidade;
+    private int seguranca;
+    private int recursos;
     String decisao;
 
     Scanner scanner = new Scanner(System.in);
@@ -10,21 +14,51 @@ public class Governante extends Personagem implements Lideranca{
     public Governante(String nome, int idade) {
         super(nome, idade);
         this.credibilidade = 50; //credibilidade inicial (média, pois se trata de um governante já eleito)
+        this.seguranca = 50;
+        this.recursos = 60;
     }
 
     public int getCredibilidade() {
         return credibilidade;
     }
+
     public void aumentarCredibilidade(int valorXp) {
         credibilidade += valorXp;
-        System.out.println("Parabéns! Sua Credibilidade foi aumentada em " + valorXp + " pontos. Credibilidade atual: " + credibilidade);
+        System.out.println("Parabéns! Sua Credibilidade foi aumentada em " + valorXp + " pontos. Credibilidade atual: " + credibilidade + "\n");
     }
 
     public void diminuirCredibilidade(int valorXp) {
         credibilidade -= valorXp;
-        System.out.println("Tome cuidado! Sua credibilidade foi diminuída em " + valorXp + " pontos. Credibilidade atual: " + credibilidade);
+        System.out.println("Tome cuidado! Sua credibilidade foi diminuída em " + valorXp + " pontos. Credibilidade atual: " + credibilidade + "\n");
     }
 
+    public int getRecursos() {
+        return recursos;
+    }
+
+    public void aumentarRecursos(int valorXp) {
+        recursos += valorXp;
+        System.out.println("Parabéns! Você aumentou seus recursos em " + valorXp + " pontos. Valor dos recursos atuais: " + recursos + "\n");
+    }
+
+    public void diminuirRecursos(int valorXp) {
+        recursos -= valorXp;
+        System.out.println("Tome cuidado, você perdeu alguns recursos! Eles foram diminuídos em " + valorXp + " pontos. Valor dos recursos atuais: " + recursos + "\n");
+    }
+
+    public int getSeguranca() {
+        return seguranca;
+    }
+
+    public void aumentarSeguranca(int valorXp) {
+        seguranca += valorXp;
+        System.out.println("Parabéns! Você aumentou a segurança do seu país em " + valorXp + " pontos. Valor da segurança atual: " + seguranca + "\n");
+    }
+
+    public void diminuirSeguranca(int valorXp) {
+        seguranca -= valorXp;
+        System.out.println("Tome cuidado! Você diminuiu a segurança do seu país em " + valorXp + " pontos. Valor da segurança atual: " + seguranca + "\n");
+    }
 
     public void acao() {
         try{
@@ -44,8 +78,9 @@ public class Governante extends Personagem implements Lideranca{
             decisao = scanner.next();
             scanner.nextLine(); 
             if (decisao.equalsIgnoreCase("s")) {
-                System.out.println("Que bom, porque nossos observatórios mostram que realmente existem corpos desconhecidos viajando a uma velocidade alta demais para tão pouco tamanho.");
+                System.out.println("Que bom, porque nossos observatórios mostram que realmente existem corpos desconhecidos viajando a uma velocidade alta demais para tão pouco tamanho. \n");
                 aumentarCredibilidade(10);
+                aumentarSeguranca(10);
                 tomarDecisoes();
             } else if (decisao.equalsIgnoreCase("n")) {
                 System.out.println("Você decidiu dizer a todos que essas declarações são mentira.");
@@ -95,6 +130,43 @@ public void tomarDecisoes() {
             decisao = scanner.next();
             scanner.nextLine(); 
             if (decisao.equalsIgnoreCase("n")) {
+                System.out.println("Esses recuros podem vir a ser importantes, mas parece que esse plano possui outras intenções... \n");
+                aumentarCredibilidade(10);
+                diminuirRecursos(10);
+            } else if (decisao.equalsIgnoreCase("s")) {
+                System.out.println("Pense que será um processo de neocolonialismo e que não será visto com bons olhos por países dos outros continentes. \n");
+                diminuirCredibilidade(10);
+                aumentarRecursos(10);
+                diminuirSeguranca(10);
+            } else {
+                System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
+            }
+        } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
+
+        do {
+            System.out.println("Países do ocidente quererem formar uma aliança econômica e militar e não compartilhar recursos com as nações orientais. Você quer se juntar à essa organização? (s/n)");
+            decisao = scanner.next();
+            scanner.nextLine(); 
+            if (decisao.equalsIgnoreCase("n")) {
+                System.out.println("Você tem razão. Embora essa aliança assegure as nações nela inseridas, excluir os outros países pode vir a agravar ainda mais a situação. \n");
+                aumentarCredibilidade(10);
+                diminuirRecursos(10);
+                aumentarSeguranca(10);
+            } else if (decisao.equalsIgnoreCase("s")) {
+                System.out.println("Você adquiriu muitos recursos que serão divididos entre os países do acordo. Mas talvez as nações que ficaram de fora se sintam ameaçadas. \n");
+                diminuirCredibilidade(10);
+                aumentarRecursos(10);
+                diminuirSeguranca(10);
+            } else {
+                System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
+            }
+        } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
+        
+        do {
+            System.out.println("Pensando em recursos naturais, você gostaria de apoiar o plano da União Européia em relação à extração desses recuros de países subdesenvolvidos para criação de armas? (s/n)");
+            decisao = scanner.next();
+            scanner.nextLine(); 
+            if (decisao.equalsIgnoreCase("n")) {
                 System.out.println("Esses recuros podem vir a ser importantes, mas parece que esse plano possui outras intenções...");
                 aumentarCredibilidade(10);
             } else if (decisao.equalsIgnoreCase("s")) {
@@ -104,7 +176,6 @@ public void tomarDecisoes() {
                 System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
             }
         } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
-
         do {
             System.out.println("Pensando em recursos naturais, você gostaria de apoiar o plano da União Européia em relação à extração desses recuros de países subdesenvolvidos para criação de armas? (s/n)");
             decisao = scanner.next();
