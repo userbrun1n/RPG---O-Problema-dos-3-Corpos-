@@ -24,7 +24,7 @@ Esperamos que você se divirta bastante!
 
 Java 8 ou superior
 
-Ter o Virtual Studio Code instalado na versão mais recente
+Ter o Virtual Studio Code (ou outra IDE) instalado na versão mais recente
 
 Ter o Git instalado
 
@@ -34,11 +34,15 @@ Ter o Git instalado
 
 - `Passo 1`: Clonar o repositório
 
-Uma vez dentro do Virtual Studio Code, usando o "Gitbash" como terminal, você deve baixar todos os arquivos presentes no projeto, usando o "git clone". usando esse comando, todo o repositório será clonado para a sua máquina. Assim: 
+Uma vez dentro do Virtual Studio Code, usando o "Gitbash" como terminal, por exemplo, você deve baixar todos os arquivos presentes no projeto, usando o "git clone". usando esse comando, todo o repositório será clonado para a sua máquina. Assim: 
 
-"`git clone https://github.com/userbrun1n/RPG---O-Problema-dos-3-Corpos-.git`" #Primeiro Comando
+"`git init`" #Primeiro Comando
 
-"`cd RPG---O-Problema-dos-3-Corpos-`" #Segundo Comando
+"`git clone https://github.com/userbrun1n/RPG---O-Problema-dos-3-Corpos-.git`" #Segundo Comando
+
+"`cd RPG---O-Problema-dos-3-Corpos-`" #Terceiro Comando
+
+Embora isso seja o bastante para rodar o código (rodando sempre a classe "Main"), se caso houverem problemas, siga os passos abaixou e verifique a versão do Java da sua máquina.
 
 - `Passo 2`: Compilar os arquivos Java
 
@@ -56,5 +60,5 @@ Agora é só executar os arquivos baixados e transformados, utilizando o comando
 
 Você também pode baixar os arquivos diretamente do GitHub e usá-los online, seguindo esses passos:
 
-"`code >> download zip >> descompactar o arquivo baixado >> utilizar os arquivos descompactados em alguma ide que já tenha o java instalado e programado (como o Replit, por exemplo).`"
+"` <code> >> download zip >> descompactar o arquivo baixado >> utilizar os arquivos descompactados em alguma ide que já tenha o java instalado e programado (como o Replit, por exemplo).`"
 
