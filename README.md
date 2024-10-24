@@ -42,7 +42,7 @@ Uma vez dentro do Virtual Studio Code, usando o "Gitbash" como terminal, por exe
 
 "`cd RPG---O-Problema-dos-3-Corpos-`" #Terceiro Comando
 
-Embora isso seja o bastante para rodar o código (rodando sempre a classe "Main"), se caso houverem problemas, siga os passos abaixou e verifique a versão do Java da sua máquina.
+Embora isso seja o bastante para rodar o código (rodando sempre a classe "Main"), se caso houverem problemas, siga os passos abaixo e verifique a versão do Java da sua máquina.
 
 - `Passo 2`: Compilar os arquivos Java
 
