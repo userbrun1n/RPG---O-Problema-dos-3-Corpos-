@@ -82,7 +82,7 @@ public class Main {
                 personagem.acao();
             }
         }
-    } 
+    } scanner.close();
 
     }
 }
