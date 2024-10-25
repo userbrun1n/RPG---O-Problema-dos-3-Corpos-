@@ -301,7 +301,7 @@ public void tomarDecisoes() {
             System.out.println("\n");
 
 
-            System.out.println("Plano 3: Os representantes da Universidade Tóquio propõem a contrução de escudos de campo de distorção temporal, explorando as teorias da relatividade e física quântica. ");
+            System.out.println("Plano 3: Os representantes da Universidade Tóquio propõem a construção de escudos de campo de distorção temporal, explorando as teorias da relatividade e física quântica. ");
             Thread.sleep(4000);
             System.out.println("O plano consiste em criar um campo de distorção temporal, que envolveria a Terra em uma dilatação do tempo, onde os eventos fora dela seriam infinitamente mais lentos.");
             Thread.sleep(3000);
@@ -371,128 +371,133 @@ public void tomarDecisoes() {
                 
             } else if (decisao == 2) {
                 
-                System.out.println("Você optou pelo Plano 1: Contrução do Escudo Solar...");
+                System.out.println("Você optou pelo Plano 2: Contrução das Frotas Interestelares...");
                 Thread.sleep(2000);
                 System.out.println("Os preparativos para construção foram iniciados assim que o mundo foi notificado do plano de contenção...");
                 Thread.sleep(3000);
-                System.out.println("Utilizando materiais com nanotecnologia, foram criados enormes espelhos ultrafinos e leves, acoplados a mihões de satélites que foram lançados na atmosfera ao longo de 50 anos.");
+                System.out.println("Utilizando propulsão a laser, milhares de sondas carregando baterias de impulso eletromagnético foram construídas.");
                 Thread.sleep(4000);
-                System.out.println("Os telescópios mais distantes da Terra já não conseguiam mais identificá-la, comprovando a eficácia do plano.");
-                Thread.sleep(3000);
-                System.out.println("Porém, a vida na Terra ficou mais complicada nos próximos 300 anos. A fauna e flona foram drásticamente alteradas devido à pouca luz solar que atingia a Terra. Os cientistas criaram um sistema de luz solar artificial, mas ela é cara demais para fornecer energia ao povo como um todo.");
+                System.out.println("O plano é interceptar as naves extraterrestres em 200 anos, e acionar as baterias asism que entrarem em contato com eles, liberando um campo de 400 quilômetros de raio.");
                 Thread.sleep(5000);
-                System.out.println("Os dias e noites também, passados 500 anos, viraram artificiais. A grande redoma espelhada estva completamente montada.");
+                System.out.println("A construção das sondas demorou 50 anos, após infinitos testes. O mundo todo assistiu ao vivo seu lançamento, carregando com elas a esperança da humanidade.");
                 Thread.sleep(3000);
-                System.out.println("Quando os San-Ti chegaram, suas naves sobrevoaram a órbita da Terra durante um tempo, e lá ficaram por 2 anos.");
+                System.out.println("Passados 100 anos no espaço, algumas sondas da frota interestelar perderam o rumo ou foram comprometidas, mas nada que alterasse o tamanho do impacto na interceptação.");
                 Thread.sleep(3000);
-                System.out.println("Esse período ficou conhecido como 'A Era do Desespero'.");
+                System.out.println("Esse longo período de espera ficou conhecido como 'A Vigília dos Séculos'.");
                 Thread.sleep(3000);
-                System.out.println("Porém, um certo dia, as naves simplesmente começaram a voltar de onde tinham vindo, sem evidências da possibilidade de realmente teremn sido enganados.");
+                System.out.println("No fim de 2224, o mundo parou por um dia inteiro. As sondas chegavam ao seu destino...");
                 Thread.sleep(3000);
-                System.out.println("Nunca mais voltaram.");
+                System.out.println("Após um período de reconhecimento, as sondas se alinharam na frente da imensa frota de naves, que tinham tamanhos estratosféricos, e sem nenhuma resposta, as sondas explodiram.");
                 Thread.sleep(4000);
-                System.out.println("Após esse evento, os painéis foram retirados da atmosfera da Terra e enviados para o Sol. Durante todos esses anos, mais painéis foram criados para pegar toda a superfície solar.");
+                System.out.println("O campo eletromagnético gerado envolveu todas as naves, e conseguiu desligar os aparelhos eletrônicos.");
                 Thread.sleep(4000);
-                System.out.println("1500 anos após 2024, a humanidade extraía toda a energia disponível de sua estrela, se tornando uma civilização do tipo II.");
+                System.out.println("Algumas sondas que foram enviadas não tinham o objetivo de explodir no ataque, mas sim de se acoplar à naves alienígenas e monitorar a atividade delas para sempre.");
                 Thread.sleep(3000);
-                System.out.println("Parabéns! A escolha pelo plano dos escudos solares permitiu não só que a humanidade fosse salva, mas que evoluísse de maneira quase imensurável.");
+                System.out.println("Os humanos não sabiam ao certo se haviam ganhado. Essa incerteza gerou pânico e revoltas por centenas de anos na Terra.");
                 Thread.sleep(4000);
-                System.out.println("Todos aqueles que nasceram após sua decisão devem muito à você, os humanos reconhecem seu valor na história para sempre.");
+                System.out.println("Em 2774, o mundo viu o céu escurecer com a chegada das naves dos San-Ti. Porém, por lá ficaram durante meses sem nenhuma interação.");
+                Thread.sleep(4000);
+                Thread.sleep(3000);
+                System.out.println("Até que, uma nave terráquea vai de encontro com as naves e os registros são de uma tripulação fantasma.");
+                Thread.sleep(4000);
+                System.out.println("Todos os presentes foram mortos devido ao interrompimento de criogenia pela explosão. Os San-Ti foram derrotados e a Terra aproveitou toda a tecnologia das naves.");
                 Thread.sleep(4000);
                 System.out.println("FIM DE JOGO!");
                 System.exit(0);
 
             } else if (decisao == 3) {
                 
-                System.out.println("Você optou pelo Plano 1: Contrução do Escudo Solar...");
+                System.out.println("Você optou pelo Plano 3: Contrução do Escudo Solar...");
                 Thread.sleep(2000);
                 System.out.println("Os preparativos para construção foram iniciados assim que o mundo foi notificado do plano de contenção...");
                 Thread.sleep(3000);
-                System.out.println("Utilizando materiais com nanotecnologia, foram criados enormes espelhos ultrafinos e leves, acoplados a mihões de satélites que foram lançados na atmosfera ao longo de 50 anos.");
-                Thread.sleep(4000);
-                System.out.println("Os telescópios mais distantes da Terra já não conseguiam mais identificá-la, comprovando a eficácia do plano.");
+                System.out.println("Utilizando reatores quânticos de uma física ainda experimental, a ideia era tentar manipular o tecido do espaço-tempo para desacelerar qualquer evento fora da Terra.");
                 Thread.sleep(3000);
-                System.out.println("Porém, a vida na Terra ficou mais complicada nos próximos 300 anos. A fauna e flona foram drásticamente alteradas devido à pouca luz solar que atingia a Terra. Os cientistas criaram um sistema de luz solar artificial, mas ela é cara demais para fornecer energia ao povo como um todo.");
+                System.out.println("No entanto, esse plano gastou os recursos adquiridos muito rápido e a ciência não avançou o suficiente para realizar tal evento.");
+                Thread.sleep(3000);
+                System.out.println("Passados 300 anos, a humanidade se viu em uma realidade complicada. Cientistas do mundo todo tentaram por séculos fazer o plano funcionar, mas sem êxito.");
                 Thread.sleep(5000);
-                System.out.println("Os dias e noites também, passados 500 anos, viraram artificiais. A grande redoma espelhada estva completamente montada.");
+                System.out.println("A revolta de muitas nações tratou de dividir os países e cada grupo preparar um plano de conteção prórpio.");
                 Thread.sleep(3000);
-                System.out.println("Quando os San-Ti chegaram, suas naves sobrevoaram a órbita da Terra durante um tempo, e lá ficaram por 2 anos.");
+                System.out.println("Nesse contexto, muitas guerra estouraram na Europa Central e na Ásia.");
                 Thread.sleep(3000);
-                System.out.println("Esse período ficou conhecido como 'A Era do Desespero'.");
+                System.out.println("Esse período ficou conhecido como 'O Início do Fim'.");
                 Thread.sleep(3000);
-                System.out.println("Porém, um certo dia, as naves simplesmente começaram a voltar de onde tinham vindo, sem evidências da possibilidade de realmente teremn sido enganados.");
-                Thread.sleep(3000);
-                System.out.println("Nunca mais voltaram.");
+                System.out.println("Com a tensão aumentando cada vez mais, no fim de 2650, bastou que uma nação colocasse uma única ogiva no ar para que o plano de Destruição Mútua Assegurada se tornasse realidade.");
+                Thread.sleep(5000);
+                System.out.println("Em 60 minutos após o lançamento da primeira ogiva, todos os países que continham armas nucleares as lançaram também. Em 10 horas, dois terços do mundo já haviam sido destruídos.");
                 Thread.sleep(4000);
-                System.out.println("Após esse evento, os painéis foram retirados da atmosfera da Terra e enviados para o Sol. Durante todos esses anos, mais painéis foram criados para pegar toda a superfície solar.");
+                System.out.println("Os humanos que sobreviveram, cerca de 8% da população total (na época eram 10 bilhões), não conseguiram se reestruturar a tempo.");
                 Thread.sleep(4000);
-                System.out.println("1500 anos após 2024, a humanidade extraía toda a energia disponível de sua estrela, se tornando uma civilização do tipo II.");
+                System.out.println("Em 2774, a chegada e domínio dos San-Ti não demorou mais de 2 dois dias. A humanidade perdeu para si mesma, e depois para os alienígenas.");
                 Thread.sleep(3000);
-                System.out.println("Parabéns! A escolha pelo plano dos escudos solares permitiu não só que a humanidade fosse salva, mas que evoluísse de maneira quase imensurável.");
+                System.out.println("Tudo começou com um plano que não deveria ter sido cogitado. Há grande parcela de culpa sua nisso.");
                 Thread.sleep(4000);
-                System.out.println("Todos aqueles que nasceram após sua decisão devem muito à você, os humanos reconhecem seu valor na história para sempre.");
+                System.out.println("Todos aqueles que nasceram após sua decisão estavam fadados à morte e extinção muito graças à você, Os humanos tiveram um trágico fim, dando início à Era Estável Perpétua dos San-Ti.");
                 Thread.sleep(4000);
                 System.out.println("FIM DE JOGO!");
                 System.exit(0);
 
             } else if (decisao == 4) {
                 
-                System.out.println("Você optou pelo Plano 1: Contrução do Escudo Solar...");
+                System.out.println("Você optou pelo Plano 4: Construção do Super Colisor de Partículas...");
                 Thread.sleep(2000);
                 System.out.println("Os preparativos para construção foram iniciados assim que o mundo foi notificado do plano de contenção...");
                 Thread.sleep(3000);
-                System.out.println("Utilizando materiais com nanotecnologia, foram criados enormes espelhos ultrafinos e leves, acoplados a mihões de satélites que foram lançados na atmosfera ao longo de 50 anos.");
+                System.out.println("Com a cooperação de cientistas de várias nações, foram erguidas instalações gigantescas ao redor do planeta, abrigando o maior acelerador de partículas já imaginado.");
                 Thread.sleep(4000);
-                System.out.println("Os telescópios mais distantes da Terra já não conseguiam mais identificá-la, comprovando a eficácia do plano.");
+                System.out.println("Após décadas de trabalho, o Super Colisor estava pronto para criar micro buracos de minhoca, dando início aos primeiros testes de transporte interestelar.");
                 Thread.sleep(3000);
-                System.out.println("Porém, a vida na Terra ficou mais complicada nos próximos 300 anos. A fauna e flona foram drásticamente alteradas devido à pouca luz solar que atingia a Terra. Os cientistas criaram um sistema de luz solar artificial, mas ela é cara demais para fornecer energia ao povo como um todo.");
+                System.out.println("As primeiras sondas enviadas foram bem-sucedidas, e logo portais temporários surgiram, permitindo até mesmo a possibilidade de enviar tropas e recursos em viagens instantâneas.");
                 Thread.sleep(5000);
-                System.out.println("Os dias e noites também, passados 500 anos, viraram artificiais. A grande redoma espelhada estva completamente montada.");
-                Thread.sleep(3000);
-                System.out.println("Quando os San-Ti chegaram, suas naves sobrevoaram a órbita da Terra durante um tempo, e lá ficaram por 2 anos.");
-                Thread.sleep(3000);
-                System.out.println("Esse período ficou conhecido como 'A Era do Desespero'.");
-                Thread.sleep(3000);
-                System.out.println("Porém, um certo dia, as naves simplesmente começaram a voltar de onde tinham vindo, sem evidências da possibilidade de realmente teremn sido enganados.");
-                Thread.sleep(3000);
-                System.out.println("Nunca mais voltaram.");
+                System.out.println("No entanto, esse avanço trouxe desafios: o custo energético e a instabilidade dos portais causaram efeitos imprevisíveis, exigindo cautela em cada uso.");
                 Thread.sleep(4000);
-                System.out.println("Após esse evento, os painéis foram retirados da atmosfera da Terra e enviados para o Sol. Durante todos esses anos, mais painéis foram criados para pegar toda a superfície solar.");
-                Thread.sleep(4000);
-                System.out.println("1500 anos após 2024, a humanidade extraía toda a energia disponível de sua estrela, se tornando uma civilização do tipo II.");
+                System.out.println("2774, quando os San Ti finalmente chegaram, a humanidade estava preparada, com portais que permitiram ataques rápidos e inesperados nas áreas mais vulneráveis da frota inimiga.");
                 Thread.sleep(3000);
-                System.out.println("Parabéns! A escolha pelo plano dos escudos solares permitiu não só que a humanidade fosse salva, mas que evoluísse de maneira quase imensurável.");
-                Thread.sleep(4000);
-                System.out.println("Todos aqueles que nasceram após sua decisão devem muito à você, os humanos reconhecem seu valor na história para sempre.");
-                Thread.sleep(4000);
+                System.out.println("A batalha se prolongou, mas os San Ti, após inúmeros reveses e sem previsibilidade nos ataques, começaram a recuar.");
+                Thread.sleep(3000);
+                System.out.println("Esse período de defesa estratégica ficou conhecido como 'A Era dos Portais'.");
+                Thread.sleep(2000);
+                System.out.println("Após anos de tentativas, as naves dos San Ti deixaram o sistema solar e jamais retornaram, deixando a humanidade com a vantagem do controle de portais intergalácticos.");
+                Thread.sleep(3000);
+                System.out.println("Com o tempo, o Super Colisor continuou em operação, evoluindo e permitindo que a Terra explorasse e até colonizasse novos sistemas estelares.");
+                Thread.sleep(3000);
+                System.out.println("1500 anos após 2024, a humanidade havia se expandido por várias estrelas, atingindo o status de civilização do tipo II.");
+                Thread.sleep(3000);
+                System.out.println("Parabéns! A escolha pelo plano do Super Colisor permitiu que a humanidade prosperasse e evoluísse de forma monumental.");
+                Thread.sleep(2000);
+                System.out.println("A história nunca esquecerá sua decisão e como ela moldou o futuro dos humanos.");
+                Thread.sleep(2500);
                 System.out.println("FIM DE JOGO!");
                 System.exit(0);
 
-            } else {
-                System.out.println("Você decidiu omitir as informações.");
-                diminuirCredibilidade(50);
-                Thread.sleep(2000);
-                System.out.println("Se existir um Deus, rezemos para que tenham piedade de nós quando chegarem...");
-                //salta para 2774 e encerra o jogo
-                Thread.sleep(5000);
-                System.out.println("Ano 2774: Eles chegaram... Os San-Ti chegaram...");
-                Thread.sleep(4000);
-                System.out.println("Não duramos muito. Descobrimos que estão aqui há muito tempo nos observando com seus Sophons... Sabiam tudo de nós. TUDO.");
-                Thread.sleep(4000);
-                System.out.println("A Terra foi colonizada pelos San-Ti, e uma raça inteira foi dizimada por sua culpa. Que o grito dos inocentes ecoe em sua cabeça por toda a eternidade.");
-                System.out.println("FIM DE JOGO!");
-                System.exit(0); 
-            }
+            } 
 
-
-        } else if (credibilidade < 40) {
-            System.out.println("Sua liderança está sendo questionada. Precisamos de um plano melhor para proteger a Terra.");
-            // Implementar lógica para liderança falha
         } else {
-            System.out.println("Sua liderança é aceitável. Vamos continuar trabalhando para fortalecer nossas defesas.");
-            // Implementar lógica para liderança aceitável
-        }
-    
+            System.out.println("Suas escolhas não foram muito bem vistas pelo resto do mundo...");
+            Thread.sleep(2000);
+            System.out.println("Com cada decisão mal calculada, a construção e manutenção das defesas foram afetadas, enquanto a credibilidade da sua liderança caía.");
+            Thread.sleep(3000);
+            System.out.println("Recursos essenciais foram desperdiçados em projetos falhos, enquanto cientistas e estrategistas desmotivados deixaram os programas e foram trabalhar em outras nações.");
+            Thread.sleep(4000);
+            System.out.println("A humanidade se tornou mais vulnerável. Quando os San Ti chegaram, a Terra não estava preparada para a ofensiva alienígena.");
+            Thread.sleep(3000);
+            System.out.println("Durante o primeiro contato, o planeta foi incapaz de responder com eficácia. As defesas montadas entraram em colapso uma a uma...");
+            Thread.sleep(5000);
+            System.out.println("Em poucos dias, as principais cidades foram destruídas, e com elas, os sistemas de comunicação e controle.");
+            Thread.sleep(4000);
+            System.out.println("Os líderes da resistência fizeram o possível para mobilizar o que restava, mas sem organização ou tecnologia suficiente, a derrota foi inevitável.");
+            Thread.sleep(3000);
+            System.out.println("Alguns sobreviventes fugiram para áreas remotas, tentando sobreviver, mas a civilização como se conhecia havia sido destruída.");
+            Thread.sleep(3000);
+            System.out.println("Sem forças para resistir, a Terra foi dominada pelos San Ti. O legado da humanidade desapareceu nas ruínas do planeta...");
+            Thread.sleep(4000);
+            System.out.println("O que restou foram apenas fragmentos de uma sociedade que um dia sonhou em conquistar as estrelas.");
+            Thread.sleep(4000);
+            System.out.println("FIM DE JOGO.");
+            System.exit(0);
+
+        } 
 
 }  catch (InterruptedException e) {//trata as exceções dos delays colocados
     //exceção para tratar o thread.sleep()
@@ -501,5 +506,3 @@ public void tomarDecisoes() {
 }
 }
 }
-
-
