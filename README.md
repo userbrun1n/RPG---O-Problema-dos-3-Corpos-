@@ -8,8 +8,8 @@ Nesse jogo, você será introduzido(a) à maior crise que a humanidade já conhe
 
 Com a oportunidade de ser um cientista que está ajudando nesses casos, um governante de um país importante, ou um militar na linha de frente, você poderá fazer com que a humanidade vença essa batalha.
 
+Esse jogo, diferentemente dos RPGs convencionais, é feito somente por escolhas de sim ou não (lembrando o filme interativo ['Black Mirror: Bandersnatch'](https://youtu.be/VNw9DAwp2Kk?si=evnA4o3Pcziu5LGr)) que impactam no final da história, esse que possui mais de 12 formas diferentes de terminar. 
 Mas cuidado, cada escolha importa, e se não as fizer corretamente, o fim do lar como conhecemos poderá ser inevitável. 
-
 
 Esperamos que você se divirta bastante!
 
