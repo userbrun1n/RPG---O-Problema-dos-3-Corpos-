@@ -407,7 +407,7 @@ public void tomarDecisoes() {
 
             } else if (decisao == 3) {
                 
-                System.out.println("Você optou pelo Plano 3: Contrução do Escudo Solar...");
+                System.out.println("Você optou pelo Plano 3: Contrução do Reator do Campo de Distorção Temporal...");
                 Thread.sleep(2000);
                 System.out.println("Os preparativos para construção foram iniciados assim que o mundo foi notificado do plano de contenção...");
                 Thread.sleep(3000);
