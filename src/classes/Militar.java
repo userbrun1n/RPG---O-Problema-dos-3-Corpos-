@@ -204,7 +204,7 @@ public class Militar extends Personagem implements Combate{
 
                 System.out.println("Os inimigos ajustam sua rota e aceleram em direção à nossa frota, abrindo fogo com lasers. \n");
                 Thread.sleep(2000);
-                receberDano(15);
+                receberDano(40);
                 System.out.println("De repente, perdemos muitos soldados. Eles não parecem ter vindo até aqui para uma luta demorada. Se vacilarmos, seremos aniquilados...");
                 Thread.sleep(3000);
 
@@ -215,7 +215,7 @@ public class Militar extends Personagem implements Combate{
     
                     if (decisao.equalsIgnoreCase("s")) {
                         System.out.println("A frota acionada executa uma série de manobras evasivas, flanqueando os inimigos e disparando rajadas em tudo que se mexesse e não fosse terráqueo. \n");
-                        aplicarDano(20);
+                        aplicarDano(40);
                         aumentarPrestigio(10);
                         Thread.sleep(2000);
                         System.out.println("Nosso ataque causou a perda de muitos deles, e isso motivou os soldados da frota a continuarem lutando. A formação de caças inimigos, embora eficaz, agora está ruída. É nossa chance de acabar com eles.");
@@ -240,7 +240,7 @@ public class Militar extends Personagem implements Combate{
     
                     if (decisao.equalsIgnoreCase("s")) {
                         System.out.println("Nosso ataque foi brutal. Como temos vantagem no terrirório, a ofensiva destrói as defesas e chances de ataque dos inimigos. A guerra de Saturno está prestes a acabar! \n");
-                        aplicarDano(30);
+                        aplicarDano(40);
                         aumentarPrestigio(15);
                         Thread.sleep(3000);
                         System.out.println("Se mantivermos nossos ataques, a Terra terá mais mais chances.");
@@ -249,7 +249,7 @@ public class Militar extends Personagem implements Combate{
                         Thread.sleep(2000);
                         diminuirPrestigio(10);
                         System.out.println("Perdemos muitos soldados devido à dessincronização das naves. Isso poderia ter sido evitado.");
-                        receberDano(20);
+                        receberDano(50);
                     } else {
                         System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
                     }
@@ -258,7 +258,7 @@ public class Militar extends Personagem implements Combate{
                 Thread.sleep(3000);
                 System.out.println("A batalha de Saturno está em seus atos finais. Perdemos homens, mas também levamos muitos deles.");
 
-                if (vidaSan <= 0) {
+                if (vidaSan <= 10) {
                     System.out.println("Conseguimos atrair e neutralizar as frotas alienígenas. Por causa dos nossos esforços, sua estratégia e o sacrifício de muitos homens, a Terra terá uma chance!");
                     aumentarPrestigio(30);
                     System.out.println("Os caças abatidos na Guerra de Saturno fizeram falta para o combate que está acontecendo na Terra.");
@@ -273,8 +273,8 @@ public class Militar extends Personagem implements Combate{
                     Thread.sleep(3000);
                     System.out.println("FIM DE JOGO!");
                     System.exit(0);
-                    
-                } else if (vida <= 0) {
+
+                } else if (vida <= 10) {
                     System.out.println("A base de Saturno foi sobrecarregada, e os San Ti abriram caminho para invadir outras posições.");
                     diminuirPrestigio(30);
                     System.out.println("Infelizmente, a derrota pode ter consequências devastadoras para a Terra.");
@@ -284,8 +284,7 @@ public class Militar extends Personagem implements Combate{
                     System.out.println("Seus esforços garantem um respiro, mas a guerra está longe de acabar.");
                 }
 
-                    Thread.sleep(3000);
-                    System.out.println("Você respira fundo, sabendo que cada decisão moldou o destino da humanidade. A luta continua, e a próxima batalha pode ser ainda mais intensa.");
+        
 
             }
 
