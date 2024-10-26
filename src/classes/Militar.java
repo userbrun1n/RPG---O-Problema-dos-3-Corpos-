@@ -275,21 +275,107 @@ public class Militar extends Personagem implements Combate{
                     System.exit(0);
 
                 } else if (vida <= 10) {
-                    System.out.println("A base de Saturno foi sobrecarregada, e os San Ti abriram caminho para invadir outras posições.");
+                    System.out.println("A base de Saturno foi sobrecarregada, e suas escolhas contribuíram para a derrota da nossa frota. \n");
                     diminuirPrestigio(30);
-                    System.out.println("Infelizmente, a derrota pode ter consequências devastadoras para a Terra.");
-                } else {
-                    System.out.println("A batalha termina em um impasse tenso, mas os San Ti estão enfraquecidos e recuam momentaneamente.");
-                    aumentarPrestigio(10);
-                    System.out.println("Seus esforços garantem um respiro, mas a guerra está longe de acabar.");
-                }
+                    Thread.sleep(3000);
+                    System.out.println("Falhamos em nossa missão. As naves inimigas destruíram nossa base planetária.");
+                    Thread.sleep(3000);
+                    System.out.println("Não suportamos seu ataque, e falhamos com a humanidade. Morremos sem completar nossa missão.");
+                    Thread.sleep(3000);
+                    System.out.println("Retomando a formação, os caças inimigos chegaram à órbita da Terra horas depois da batalha de Saturno.");
+                    Thread.sleep(3000);
+                    System.out.println("Infelizmente, as defesas terrestres não suportaram os ataques fortificados.");
+                    Thread.sleep(3000);
+                    System.out.println("Em pouco tempo, canhões de plasma atingiram a Terra, e mataram todos nela.");
+                    Thread.sleep(3000);
+                    System.out.println("A humanidade perdeu. De nada adiantou os séculos de preparo, e os milênios de existência.");
+                    Thread.sleep(3000);
+                    System.out.println("FIM DE JOGO!");
+                    System.exit(0);
+                
+                } 
 
-        
+            } else if (escolha == 3) {
+
+                System.out.println("Você e seu pelotão serão transferidos para Marte em 3, 2, 1...");
+                Thread.sleep(4000);
+                System.out.println("Sua missão: Servir de apoio 'aéreo' para a Terra durante o conflito com os San-Ti.");
+                Thread.sleep(3000);
+                System.out.println("Enquanto sua frota espera, criaremos estratégias de combate...");
+                Thread.sleep(6000);
+            
+                System.out.println("Espera. Eles apareceram do nada. Uma hora não estavam lá, e agora estão. Precisamos agir rápido.");
+                Thread.sleep(3000);
+            
+                do {
+                    System.out.println("Deseja iniciar um ataque preventivo contra a primeira onda de naves alienígenas? (s/n)");
+                    decisao = scanner.next();
+                    scanner.nextLine();
+            
+                    if (decisao.equalsIgnoreCase("s")) {
+                        System.out.println("Você ordena o disparo dos canhões de plasma e uma chuva de feixes energéticos corta o espaço, atingindo várias naves San-Ti que explodem em um espetáculo de luz e poeira cósmica.");
+                        aplicarDano(20);
+                        aumentarPrestigio(10);
+                        Thread.sleep(3000);
+                        System.out.println("Seu ataque foi bem-sucedido, mas os sistemas da base detectam outra onda de San-Ti vindo a toda velocidade. As defesas de Marte estão sobrecarregadas.");
+                        Thread.sleep(3000);
+            
+                        System.out.println("Você é notificado de que redirecionar o escudo de Marte para a Terra poderá proteger o planeta, mas deixará a base marciana vulnerável.");
+                        Thread.sleep(4000);
+            
+                        System.out.println("Deseja redirecionar o escudo de Marte para reforçar a defesa da Terra? (s/n)");
+                        decisao = scanner.nextLine();
+            
+                        if (decisao.equalsIgnoreCase("s")) {
+                            System.out.println("Você comanda o redirecionamento dos escudos. A base de Marte fica desprotegida, mas a Terra agora conta com uma proteção vital.");
+                            Thread.sleep(3000);
+                            System.out.println("As naves San-Ti lançam um ataque feroz contra Marte, destruindo estruturas ao seu redor, mas o planeta está a salvo.");
+                            aplicarDano(50);
+                            if (vida > 0) {
+                                System.out.println("Sua base resiste ao ataque! A Terra foi salva, e você será lembrado como o herói que se sacrificou por ela.");
+                                aumentarPrestigio(20);
+                                System.out.println("FIM DE JOGO! A humanidade sobreviveu.");
+                                System.exit(0);
+                            } else {
+                                System.out.println("A base de Marte não suportou o ataque e é destruída, mas a Terra foi salva graças ao seu sacrifício.");
+                                Thread.sleep(3000);
+                                System.out.println("FIM DE JOGO! Sua bravura será eternamente lembrada.");
+                                System.exit(0);
+                            }
+                        } else if (decisao.equalsIgnoreCase("n")) {
+                            System.out.println("Você decide manter o escudo em Marte para enfrentar a segunda onda de San-Ti diretamente.");
+                            Thread.sleep(3000);
+                            System.out.println("Os canhões de Marte abrem fogo mais uma vez e conseguem destruir a maior parte da segunda onda. No entanto, algumas naves San-Ti conseguem passar e seguem em direção à Terra.");
+                            aplicarDano(30);
+                            Thread.sleep(4000);
+                            if (vida > 0) {
+                                System.out.println("Sua equipe lutou bravamente, mas parte da frota inimiga conseguiu furar as defesas. O planeta está sob ataque direto.");
+                                diminuirPrestigio(15);
+                                System.out.println("FIM DE JOGO! A humanidade sobrevive, mas a batalha ainda não acabou.");
+                                System.exit(0);
+                            } else {
+                                System.out.println("A base de Marte não aguentou o contra-ataque San-Ti. Sua missão termina com Marte em ruínas e a Terra em perigo.");
+                                Thread.sleep(3000);
+                                System.out.println("FIM DE JOGO! A Terra enfrenta agora o perigo sozinha.");
+                                System.exit(0);
+                            }
+                        }
+                    } else if (decisao.equalsIgnoreCase("n")) {
+                        System.out.println("Você hesita e decide não atacar. As naves alienígenas continuam avançando, sem obstáculos.");
+                        Thread.sleep(3000);
+                        System.out.println("Quando a primeira onda San-Ti alcança a Terra, uma batalha intensa começa, mas as forças defensivas do planeta não são páreo para os San-Ti.");
+                        diminuirPrestigio(50);
+                        Thread.sleep(4000);
+                        System.out.println("Sua inação custou caro: a Terra está vulnerável, e a humanidade agora enfrenta um futuro sombrio.");
+                        Thread.sleep(2000);
+                        System.out.println("FIM DE JOGO! Você falhou em proteger a Terra.");
+                        System.exit(0);
+                    } else {
+                        System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
+                    }
+                } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
 
             }
-
-
-
 
 
 
