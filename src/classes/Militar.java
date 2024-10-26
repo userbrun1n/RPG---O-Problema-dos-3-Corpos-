@@ -170,6 +170,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                     }
                 } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
             } else if (escolha == 2) {
+                
                 System.out.println("Você e seu pelotão serão transferidos para Saturno em 3, 2, 1...");
                 Thread.sleep(4000);
                 System.out.println("O plano da base de Saturno é uma batalha espacial, baseada em Guerra nas Estrelas, com frotas encurralando naves e acionando ataques em caso de represália..");
@@ -315,72 +316,263 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                     scanner.nextLine();
             
                     if (decisao.equalsIgnoreCase("s")) {
-                        System.out.println("Você ordena o disparo dos canhões de plasma e uma chuva de feixes energéticos corta o espaço, atingindo várias naves San-Ti que explodem em um espetáculo de luz e poeira cósmica.");
-                        aplicarDano(20);
+                        System.out.println("O disparo dos canhões de plasma criou uma chuva vermelha de lasers em direção às naves inimigas, atingindo várias delas e as desintegrando... \n");
+                        aplicarDano(30);
                         aumentarPrestigio(10);
                         Thread.sleep(3000);
-                        System.out.println("Seu ataque foi bem-sucedido, mas os sistemas da base detectam outra onda de San-Ti vindo a toda velocidade. As defesas de Marte estão sobrecarregadas.");
+                        System.out.println("Nosso ataque surtiu o efeito esperado, mas parece que se dividiram, e uma frota inimiga está se aproximando.");
                         Thread.sleep(3000);
-            
-                        System.out.println("Você é notificado de que redirecionar o escudo de Marte para a Terra poderá proteger o planeta, mas deixará a base marciana vulnerável.");
+                        System.out.println("É possível criarmos uma distração e ataque, dividindo ainda mais as frotas San-Ti e ganhando tempo para a Terra. Mas, teremos que sacrificar nossas vidas para isso.");
+                        Thread.sleep(4000);
+                        System.out.println("O plano de distração e ataque consiste em deixar que se aproximem o mais perto possível de nós, ganhando tempo, e emitindo uma rajada à laser forte o suficiente para derrubar essas naves na superfície.");
+                        Thread.sleep(4000);
+                        System.out.println("Isso causaria uma gigantesca explosão em pelo menos um terço do planeta, e nós estaríamos bem no meio disso.");
+                        Thread.sleep(3000);
+                        System.out.println("Nosso sacrifício romperia a formação inimiga e os desfalcaria para a batalha que acontece na Terra.");
                         Thread.sleep(4000);
             
-                        System.out.println("Deseja redirecionar o escudo de Marte para reforçar a defesa da Terra? (s/n)");
+                        System.out.println("Deseja acionar o plano de distração e ataque? (s/n)");
                         decisao = scanner.nextLine();
             
                         if (decisao.equalsIgnoreCase("s")) {
-                            System.out.println("Você comanda o redirecionamento dos escudos. A base de Marte fica desprotegida, mas a Terra agora conta com uma proteção vital.");
+                            System.out.println("Acionamos o plano. As naves atingidas não demoraram para cair no solo. \n");
                             Thread.sleep(3000);
-                            System.out.println("As naves San-Ti lançam um ataque feroz contra Marte, destruindo estruturas ao seu redor, mas o planeta está a salvo.");
                             aplicarDano(50);
-                            if (vida > 0) {
-                                System.out.println("Sua base resiste ao ataque! A Terra foi salva, e você será lembrado como o herói que se sacrificou por ela.");
-                                aumentarPrestigio(20);
-                                System.out.println("FIM DE JOGO! A humanidade sobreviveu.");
-                                System.exit(0);
-                            } else {
-                                System.out.println("A base de Marte não suportou o ataque e é destruída, mas a Terra foi salva graças ao seu sacrifício.");
-                                Thread.sleep(3000);
-                                System.out.println("FIM DE JOGO! Sua bravura será eternamente lembrada.");
-                                System.exit(0);
-                            }
-                        } else if (decisao.equalsIgnoreCase("n")) {
-                            System.out.println("Você decide manter o escudo em Marte para enfrentar a segunda onda de San-Ti diretamente.");
+                            System.out.println("OS destroços nos atingiram em cheio. Mas levamos muitos conosco.");
                             Thread.sleep(3000);
-                            System.out.println("Os canhões de Marte abrem fogo mais uma vez e conseguem destruir a maior parte da segunda onda. No entanto, algumas naves San-Ti conseguem passar e seguem em direção à Terra.");
+                            System.out.println("As naves que estão na Terra agora se encontram em desvantagem, e os soldados estão ganhando.");
+                            Thread.sleep(3000);
+                            System.out.println("Não pudermos ver, mas em pouco tempo, as frotas inimigas foram derrotadas, surpreendidas pelo ataque vindo de Vênus e pelos esquadrões em Saturno.");
+                            Thread.sleep(3000);
+                            System.out.println("A Terra triunfou perante à ameaça extraterrestre, graças aos nossos esforços.");
+                            Thread.sleep(3000);
+                            System.out.println("Vencemos a primeira batalha intergalática da humanidade!");
+                            Thread.sleep(3000);
+                            System.exit(0);
+                           
+                        } else if (decisao.equalsIgnoreCase("n")) {
+                            System.out.println("Copiado, o plano de distração e ataque não será acionado. Vamos manter o combate sob controle.");
+                            Thread.sleep(3000);
+                            System.out.println("Ativando a segunda leva de disparos... \n");
                             aplicarDano(30);
                             Thread.sleep(4000);
-                            if (vida > 0) {
-                                System.out.println("Sua equipe lutou bravamente, mas parte da frota inimiga conseguiu furar as defesas. O planeta está sob ataque direto.");
-                                diminuirPrestigio(15);
-                                System.out.println("FIM DE JOGO! A humanidade sobrevive, mas a batalha ainda não acabou.");
-                                System.exit(0);
-                            } else {
-                                System.out.println("A base de Marte não aguentou o contra-ataque San-Ti. Sua missão termina com Marte em ruínas e a Terra em perigo.");
-                                Thread.sleep(3000);
-                                System.out.println("FIM DE JOGO! A Terra enfrenta agora o perigo sozinha.");
-                                System.exit(0);
-                            }
+                            System.out.println("Ataque realizado com sucesso! Não podemos acabar com todos eles, mas estamos vencendo!");
+                            Thread.sleep(3);
+                            System.out.println("Responderam com bombardeios na superífice marciana. Infelizmente tivemos algumas baixas.\n");
+                            receberDano(30);
+                            Thread.sleep(4000);
+                            System.out.println("Vamos terminar com isso!");
+                            Thread.sleep(4000);
+                            System.out.println("Lançando o 3° disparo...");
+                            Thread.sleep(5000);
+                            System.out.println("Acertamos! As frotas que atraímos foram abatidas. Demos um fôlego à Terra.");
+                            Thread.sleep(4000);
+                            System.out.println("Por lá a batalha está sendo vencida também.");
+                            Thread.sleep(3000);
+                            System.out.println("Os ataques surpresa de Vênus e dos esquadrões de caças de Saturno devastou a maioria das frotas San-Ti.");
+                            Thread.sleep(4000);
+                            System.out.println("Não demorou muito para que a última nave tenha sido destruída!");
+                            Thread.sleep(4000);
+                            System.out.println("Gritos de guerra e comemoração foram lançados no vácuo por todo o sistema solar.");
+                            Thread.sleep(4000);
+                            System.out.println("A humanidade vence a sua primeira batalha intergalática!");
+                            System.out.println("FIM DE JOGO!");
+                            System.exit(0);
+
                         }
                     } else if (decisao.equalsIgnoreCase("n")) {
-                        System.out.println("Você hesita e decide não atacar. As naves alienígenas continuam avançando, sem obstáculos.");
-                        Thread.sleep(3000);
-                        System.out.println("Quando a primeira onda San-Ti alcança a Terra, uma batalha intensa começa, mas as forças defensivas do planeta não são páreo para os San-Ti.");
+                        System.out.println("Copiado. Aguardemos...");
+                        Thread.sleep(5000);
+                        System.out.println("Precisamos agir, as naves inimigas estão bombardeando a Terra. \n");
                         diminuirPrestigio(50);
                         Thread.sleep(4000);
-                        System.out.println("Sua inação custou caro: a Terra está vulnerável, e a humanidade agora enfrenta um futuro sombrio.");
-                        Thread.sleep(2000);
-                        System.out.println("FIM DE JOGO! Você falhou em proteger a Terra.");
-                        System.exit(0);
+                        int decisao;
+                                do {//obrigando o jogador a escolher uma opção válida, igual das outas vezes
+                                System.out.println("Entre disparar imensos canhões de laser nas naves ou causar barulho suficiente para atrair algumas delas até Marte, qual será a melhor opção? (1- Plano 1, 2- Plano 2)");
+                                while (!scanner.hasNextInt()) {
+                                    System.out.println("Entrada inválida. Por favor, digite 1 para o Plano 1 ou 2 para o Plano 2.");
+                                    scanner.next();
+                                }
+                                decisao = scanner.nextInt();
+                                scanner.nextLine(); 
+                                if (decisao != 1 && decisao != 2) {
+                                    System.out.println("Escolha inválida. Por favor, escolha (1- Plano 1, 2- Plano 2).");
+                                }
+                            } while (decisao != 1 && decisao != 2);
+
+                            if (decisao == 1) {
+                                System.out.println("Boa escolha! Vamos disparar os canhões em 3, 2, 1...");
+                                Thread.sleep(4000);
+                                System.out.println("Acertamos a primeira levada com sucesso! \n");
+                                aplicarDano(30);
+                                Thread.sleep(3000);
+                                System.out.println("Algumas naves inimigas se viraram em nossa direção. Vamos destruí-las.");
+                                Thread.sleep(3000);
+                                System.out.println("Carregando os motores, preparando para atirar.");
+                                Thread.sleep(3000);
+                                System.out.println("Disparando em 3, 2, 1...");
+                                Thread.sleep(4000);
+                                System.out.println("O ataque falhou. Mas o que pode ter acontecido?");
+                                Thread.sleep(3000);
+                                System.out.println("Tarde demais para qualquer coisa agora. Falhamos.");
+                                Thread.sleep(4000);
+                                System.out.println("'De repente, os caças da base de Saturno rasgam os céus, disparando na frota inimiga' \n");
+                                aplicarDano(30);
+                                Thread.sleep(3000);
+                                System.out.println("'Talvez perceberam que nosso ataque havia falhado.");
+                                Thread.sleep(3000);
+                                System.out.println("Nosso esquadrão foi salvo, e agora as frotas terráques seguem rumo à Terra para terminar com essa guerra!");
+                                Thread.sleep(4000);
+                                System.out.println("Em nosso planeta, nossos suportes foram fundamentais para aniquilar os San-Ti.");
+                                Thread.sleep(4000);
+                                System.out.println("Não tiveram chance contra a nossa estratégia. A humanidade vence a sua primeira batalha intergalática!");
+                                Thread.sleep(2000);
+                                System.out.println("FIM DE JOGO!");
+                                System.exit(0);
+                             
+                            } else if (decisao == 2) {
+                                System.out.println("Copiado. Vamos atraí-los disparando pequenas rajadas e os fazendo cair em uma emboscada.");
+                                Thread.sleep(3000);
+                                System.out.println("Algumas naves se viraram para a nossa posição, a formação inimiga está se desfazendo. É hora de atacar!");
+                                Thread.sleep(3000);
+                                System.out.println("Disparamos, mas não houve efito nenhum. Parece que inibiram nossos sinais infravermelhos.");
+                                Thread.sleep(3000);
+                                System.out.println("As naves estão cada vez mais perto. Se atacarem, não poderemos fazer nada.");
+                                Thread.sleep(4000);
+                                System.out.println("Eles lançaram um objeto estranho na órbita do planeta.");
+                                Thread.sleep(4000);
+                                System.out.println("É uma bomba antimatéria. Estamos condenados por aqui.");
+                                Thread.sleep(4000);
+                                System.out.println("A bomba passou a girar em torno de seu próprio eixo, aumentando seu tamanho a cada segundo.");
+                                Thread.sleep(4000);
+                                System.out.println("É possível ver uma luz forte no horizonte vermelho. Uma segunda bomba.");
+                                Thread.sleep(4000);
+                                System.out.println("Em 20 minutos, Marte ja não existia mais.");
+                                Thread.sleep(4000);
+                                System.out.println("Onde havia um planeta, agora há pó, e a lamentação de inúmeros soldados, que perderam suas vidas sem nunca saber se sua raça foi ou não vitoriosa.");
+                                System.out.println("FIM DE JOGO!");
+                                System.exit(0); 
+                            }
+
                     } else {
                         System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
                     }
                 } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
 
+            } else if (escolha == 4) {
+
+                System.out.println("Você e seu pelotão devem atuar na linha de defesa da Terra. Manteremos a luta aqui, enquanto o céu é estrelado por rajadas de lasers.");
+                Thread.sleep(4000);
+                System.out.println("Sua missão: liderar a resistência terráquea contra a frota inimiga. Planejamos durante séculos para chegar aqui.");
+                Thread.sleep(4000);
+                System.out.println("Estamos postos, assim como em Marte, Vênus e Saturno. O medo não poderá ser maior que a determinação de manter nossa existência.");
+                Thread.sleep(6000);
+                System.out.println("Eles chegaram. O horizonte azul é tomado por um enxame de naves gigantescas. Como se Mercúrio estivesse no lugar da Lua.");
+                Thread.sleep(4000);
+                
+                do {
+                    System.out.println("Nossos radares indicam que uma primeira onda está prestes a cruzar a atmosfera.");
+                    Thread.sleep(3000);
+                    System.out.println("Deseja iniciar um ataque antes que eles cheguem mais perto? (s/n)");
+                    String decisao = scanner.next();
+                    scanner.nextLine();
+            
+                    if (decisao.equalsIgnoreCase("s")) {
+                        System.out.println("Enquanto o alarme ensurdecedor de evacuação toca, uma imensa linha vermelha parte das bases terrestres para atingir as naves no céu. \n");
+                        aplicarDano(30);
+                        aumentarPrestigio(15);
+                        Thread.sleep(4000);
+                        System.out.println("Enquanto atacávamos, daqui pudemos ver a base de Vênus realizar a mesma manobra. \n");
+                        aplicarDano(20);
+                        Thread.sleep(3000);
+        
+                        System.out.println("Enquanto as naves inimigas estão atordoadas, precisavos evacuar os civis o mais e tirá-los da superfície.");
+                        Thread.sleep(3000);
+                        System.out.println("Vamos redirecionar algumas tropas para evacuar os civis, mesmo que isso enfraqueça a linha de frente? (s/n)");
+                        decisao = scanner.nextLine();
+            
+                        if (decisao.equalsIgnoreCase("s")) {
+                            System.out.println("Os soldados deixam suas posições e iniciam a evacuação.");
+                            aumentarPrestigio(20);
+                            Thread.sleep(3000);
+                            System.out.println("Esse processo demorou mais do que o esperado, e perdemos alguns homens na frente de batalha. \n");
+                            receberDano(20);
+                            Thread.sleep(4000);
+                        } else if (decisao.equalsIgnoreCase("n")) {
+                            System.out.println("Vamos manter o foco na defesa primeiro então. Mas alguns civis serão mortos sem aparo. \n");
+                            diminuirPrestigio(10);
+                            Thread.sleep(4000);
+                            System.out.println("Mesmo com a concentração máxima na linha de frente, estamos sofrendo. \n");
+                            receberDano(20);
+                            Thread.sleep(4000);
+                        }
+            
+                    } else if (decisao.equalsIgnoreCase("n")) {
+                        System.out.println("Vamos esperar o ataque, mantendo os recursos para uma possível segunda onda. \n");
+                        diminuirPrestigio(5);
+                        Thread.sleep(4000);
+                        System.out.println("O primeiro ataque das naves San-Ti atinge a Terra, causando danos severos em várias regiões. Civis e soldados são gravemente feridos. \n");
+                        receberDano(40);
+                        Thread.sleep(4000);
+            
+                        System.out.println("Com os recursos ainda intactos, você agora tem a chance de responder com força total. Deseja organizar um contra-ataque imediato? (s/n)");
+                        decisao = scanner.nextLine();
+            
+                        if (decisao.equalsIgnoreCase("s")) {
+                            System.out.println("Organizando um contra-ataque total. Canhões de plasma disparam incessantemente enquanto as naves terrestres voam para interceptar as frotas inimigas. Precisamos pular à frente. \n");
+                            aplicarDano(30);
+                            aumentarPrestigio(10);
+                            Thread.sleep(4000);
+                            System.out.println("Abatemos algumas naves, estamos equilibrando esssa guerra!");
+                            Thread.sleep(3000);
+                            System.out.println("O cheiro de fumaça e o som de explosões envolvem o campo de batalha enquanto a luta continua. Enquanto isso, mesmo sem nossa ajuda, os civis conseguiram se abrigar.");
+                            Thread.sleep(4000);
+                        } else if (decisao.equalsIgnoreCase("n")) {
+                            System.out.println("Sem o contra-ataque, os San-Ti ganham cada vez mais território aéreo e terrestre. Nossas tropas começam a recuar diante do avanço alienígena. \n");
+                            diminuirPrestigio(20);
+                            receberDano(30);
+                            Thread.sleep(4000);
+                            System.out.println("Precisamos vencer, mas parece que não há mais meios para isso.'");
+                            Thread.sleep(4000);
+                        }
+                    } else {
+                        System.out.println("Resposta inválida. Por favor, responda 's' para sim ou 'n'.");
+                    }
+            
+                } while (!decisao.equalsIgnoreCase("s") && !decisao.equalsIgnoreCase("n"));
+            
+                Thread.sleep(3000);
+                System.out.println("A batalha está chegando ao fim...");
+                Thread.sleep(4000);
+
+                if (vidaSan <= 40 && vida >= 40) {
+                    System.out.println("Mesmo com todos os contratempos, conseguimos vecner as frotas daqui. Em Vênus e Satruno a humanidade também triunfou!");
+                    Thread.sleep(4000);
+                    System.out.println("Vencemos, mas pagamos um alto preço. Em todos os lugares vemos prédios em ruínas, crateras onde antes havia parques, mas o planeta ainda será o nosso lar.");
+                    Thread.sleep(4000);
+                    System.out.println("O que resta da humanidade agora se junta para reconstruir, levando consigo a lembrança dos que se sacrificaram.");
+                    Thread.sleep(4000);
+                    System.out.println("Devemos sempre nos lembrar desse episódio, e de como fizemos o impossível para cumprir a nossa natureza: a sobreviência.");
+                    Thread.sleep(4000);
+                    System.out.println("A humanidade venceu sua primeira batalha intergalática.");
+                    Thread.sleep(4000);
+
+                } else if (vida <= 40 && vidaSan >= 40) {
+                    System.out.println("Perdemos o contato com as bases de Vênus e de Saturno.");
+                    Thread.sleep(4000);
+                    System.out.println("Daqui foi possível ver Marte ser derrotada. Parece que sabiam de todas as nossas estratégias. Mas como?");
+                    Thread.sleep(4000);
+                    System.out.println("Todas as frotas se concentram na Terra, mas não temos chances...");
+                    Thread.sleep(5000);
+                    System.out.println("Os poucos sobreviventes assistem, impotentes, enquanto os alienígenas tomam controle do planeta.");
+                    Thread.sleep(4000);
+                    System.out.println("Os humanos que sobraram, agora são escravizados e assassinados. Perdemos milênios de evoulção, para perdemos como se não fôssemos nada.");
+                    Thread.sleep(4000);
+                } 
+                System.out.println("FIM DE JOGO!");
+                System.exit(0);
+
             }
-
-
-
         } catch (InterruptedException e) {
              //exceção para tratar o thread.sleep()
             System.out.println("Ocorreu uma interrupção durante o delay, desculpe.");
