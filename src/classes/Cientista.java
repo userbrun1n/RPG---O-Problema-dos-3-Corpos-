@@ -12,7 +12,7 @@ public class Cientista extends Personagem {
     Scanner scanner = new Scanner(System.in);
     public Cientista(String nome, int idade) {
         super(nome, idade);
-        this.visor = new Vr();
+        this.visor = new Vr();//Aqui temos a aplicação da AGREGAÇÃO, onde a classe 'Vr' (que é o visor) é agragada à classe Cientista, mas ambas existem separadamente.
         this.credibilidade = 50; //credibilidade inicial (média, pois se trata de um cientista da área de pesquisa já importante)
     }
     public int getCredibilidade() {

@@ -29,7 +29,7 @@ public class Main {
         Thread.sleep(4000);
         System.out.println("Você terá 750 anos para se preparar até eles chegarem, ouviu bem?? Faça suas escolhas muito sabiamente e a Terra agradecerá!\n");
         Thread.sleep(2000);
-    } catch (InterruptedException e) {
+    } catch (InterruptedException e) {//
         //exceção para tratar o thread.sleep()
         System.out.println("Ocorreu uma interrupção durante o delay, desculpe.");
         e.printStackTrace(); //exibe o rastreamento da pilha do erro
@@ -72,14 +72,14 @@ public class Main {
             default:
                 System.out.println("Escolha inválida!");
                 return;
-        } } catch (InputMismatchException e) {
+        } } catch (InputMismatchException e) {//Aqui e nas outras classes, há o tratamento de EXCEÇÕES com o try... catch, onde ele trata um possível erro com o 'thread.sleep()'.
             System.out.println("Entrada inválida! Por favor, digite um número (1, 2 ou 3).");
             scanner.nextLine(); //vai limpar scanner para evitar loop infinito no jogo
         } finally{
             if (personagem != null) {
                 System.out.println();
-                personagem.exibirInfo();
-                personagem.acao();
+                personagem.exibirInfo(); //Aqui temos a aplicação do POLIFORMISMO, visto que o método 'personagem <acao>' serve para qualquer uma das classes.
+                personagem.acao(); //Aqui temos a aplicação do POLIFORMISMO, visto que o método 'personagem <acao>' serve para qualquer uma das classes.2
             }
         }
     } scanner.close();

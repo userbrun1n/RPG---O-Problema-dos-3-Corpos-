@@ -3,7 +3,10 @@ import java.util.Scanner;
 
 import interfaces.Lideranca;
 
-public class Governante extends Personagem implements Lideranca{
+public class Governante extends Personagem implements Lideranca{//aqui temos a aplicação de HERANÇA e INTERFACE
+    //Herança, pq o Governante herda as características da classe PERSONAGEM.
+    //Interface, pq o "contrato" da interface 'Lideranca' é impelemntado dentro da classe.
+
     private int credibilidade;
     private int seguranca;
     private int recursos;
