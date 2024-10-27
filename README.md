@@ -1,4 +1,4 @@
-## RPG Textual -- "O problema dos 3 Corpos"
+## RPG Textual -- "O Problema dos 3 Corpos"
 
 Olá e seja muito bem vindo(a) ao nosso projeto de RPG (Role Playing Game) textual. 
 
