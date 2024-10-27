@@ -4,12 +4,13 @@ Olá e seja muito bem vindo(a) ao nosso projeto de RPG (Role Playing Game) textu
 
 Esse jogo é uma homenagem à obra de Cixin Liu, 'O Problema dos Três Corpos', e que também inspirou a série da netflix, com o mesmo nome. 
 
-Nesse jogo, você será introduzido(a) à maior crise que a humanidade já conheceu, onde uma civilização extraterrestre está vindo em direção ao nosso planeta, e de alguma maneira, esse fato está causando o suicídio de muitos cientistas e pesquisadores.
+Nesse jogo, você será introduzido(a) à maior crise que a humanidade já conheceu, onde uma civilização extraterrestre (conhecidos como 'San-Ti', "Três Corpos" em chinês) está vindo em direção ao nosso planeta, e de alguma maneira, esse fato está causando o suicídio de muitos cientistas e pesquisadores.
 
 Com a oportunidade de ser um cientista que está ajudando nesses casos, um governante de um país importante, ou um militar na linha de frente, você poderá fazer com que a humanidade vença essa batalha.
 
 Esse jogo, diferentemente dos RPGs convencionais, é feito somente por escolhas de sim ou não (lembrando o filme interativo ['Black Mirror: Bandersnatch'](https://youtu.be/VNw9DAwp2Kk?si=evnA4o3Pcziu5LGr)) que impactam no final da história, esse que possui mais de 12 formas diferentes de terminar. 
 Mas cuidado, cada escolha importa, e se não as fizer corretamente, o fim do lar como conhecemos poderá ser inevitável. 
+Você pode ver como baixar e jogar em vídeo, se quiser, clicando [aqui](https://youtu.be/14-yIhSiy5s)
 
 Esperamos que você se divirta bastante!
 
