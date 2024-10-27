@@ -18,7 +18,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
     public Militar(String nome, int idade) {
         super(nome, idade);
         this.vida = 100;
-        this.vidaSan = 100; 
+        this.vidaSan = 100;
         this.dano = 20;
         this.prestigio = 50;
     }
@@ -91,7 +91,6 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                 Thread.sleep(3000);
                 System.out.println("Em qual base deseja oferecer seu coração? (1, 2, 3, 4)");
                 Thread.sleep(3000);
-
                 while (!scanner.hasNextInt()) {
                     System.out.println("Entrada inválida. Por favor, escolha uma das bases disponíveis");
                     scanner.next();
@@ -181,17 +180,17 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                 Thread.sleep(4000);
                 System.out.println("Seu esquadrão agora está a postos em seus caças.");
                 Thread.sleep(3000);
-
+                String decisao;
                 do {
                     System.out.println("As naves San Ti estão se aproximando em formação fechada. Deseja iniciar um ataque preventivo de longo alcance? (s/n) \n");
-                    String decisao = scanner.next();
+                    decisao = scanner.next();
                     scanner.nextLine();
     
                 if (decisao.equalsIgnoreCase("s")) {
                     System.out.println("O ataque com canhões de plasma foi iniciado, causando danos significativos nas fileiras inimigas e quebrando a formação. Vencemos a primeira batalha!");
                     aplicarDano(15);
-                    Thread.sleep(2000);
                     aumentarPrestigio(5);
+                    Thread.sleep(2000);
                     System.out.println("As naves inimigas se dispersam, mas algumas ainda se mantêm em curso. Temos que nos preocupar com inimigos contornando nosso terrirório.");
                 } else if (decisao.equalsIgnoreCase("n")) {
                     System.out.println("Copiado, vamos aguardar uma oportunidade melhor para atacar. \n");
@@ -261,7 +260,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                 Thread.sleep(3000);
                 System.out.println("A batalha de Saturno está em seus atos finais. Perdemos homens, mas também levamos muitos deles.");
 
-                if (vidaSan <= 10) {
+                if (vidaSan <= 10 && prestigio >= 30) {
                     System.out.println("Conseguimos atrair e neutralizar as frotas alienígenas. Por causa dos nossos esforços, sua estratégia e o sacrifício de muitos homens, a Terra terá uma chance!");
                     aumentarPrestigio(30);
                     System.out.println("Os caças abatidos na Guerra de Saturno fizeram falta para o combate que está acontecendo na Terra.");
@@ -277,7 +276,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                     System.out.println("FIM DE JOGO!");
                     System.exit(0);
 
-                } else if (vida <= 10) {
+                } else {
                     System.out.println("A base de Saturno foi sobrecarregada, e suas escolhas contribuíram para a derrota da nossa frota. \n");
                     diminuirPrestigio(30);
                     Thread.sleep(3000);
@@ -309,7 +308,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
             
                 System.out.println("Espera. Eles apareceram do nada. Uma hora não estavam lá, e agora estão. Precisamos agir rápido.");
                 Thread.sleep(3000);
-            
+                String decisao;
                 do {
                     System.out.println("Deseja iniciar um ataque preventivo contra a primeira onda de naves alienígenas? (s/n)");
                     decisao = scanner.next();
@@ -348,6 +347,8 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                             Thread.sleep(3000);
                             System.out.println("Vencemos a primeira batalha intergalática da humanidade!");
                             Thread.sleep(3000);
+                            System.out.println("FIM DE JOGO!");
+                            
                             System.exit(0);
                            
                         } else if (decisao.equalsIgnoreCase("n")) {
@@ -386,21 +387,21 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                         System.out.println("Precisamos agir, as naves inimigas estão bombardeando a Terra. \n");
                         diminuirPrestigio(50);
                         Thread.sleep(4000);
-                        int decisao;
+                        int decisao1;
                                 do {//obrigando o jogador a escolher uma opção válida, igual das outas vezes
                                 System.out.println("Entre disparar imensos canhões de laser nas naves ou causar barulho suficiente para atrair algumas delas até Marte, qual será a melhor opção? (1- Plano 1, 2- Plano 2)");
                                 while (!scanner.hasNextInt()) {
                                     System.out.println("Entrada inválida. Por favor, digite 1 para o Plano 1 ou 2 para o Plano 2.");
                                     scanner.next();
                                 }
-                                decisao = scanner.nextInt();
+                                decisao1 = scanner.nextInt();
                                 scanner.nextLine(); 
-                                if (decisao != 1 && decisao != 2) {
+                                if (decisao1 != 1 && decisao1 != 2) {
                                     System.out.println("Escolha inválida. Por favor, escolha (1- Plano 1, 2- Plano 2).");
                                 }
-                            } while (decisao != 1 && decisao != 2);
+                            } while (decisao1 != 1 && decisao1 != 2);
 
-                            if (decisao == 1) {
+                            if (decisao1 == 1) {
                                 System.out.println("Boa escolha! Vamos disparar os canhões em 3, 2, 1...");
                                 Thread.sleep(4000);
                                 System.out.println("Acertamos a primeira levada com sucesso! \n");
@@ -430,7 +431,7 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                                 System.out.println("FIM DE JOGO!");
                                 System.exit(0);
                              
-                            } else if (decisao == 2) {
+                            } else if (decisao1 == 2) {
                                 System.out.println("Copiado. Vamos atraí-los disparando pequenas rajadas e os fazendo cair em uma emboscada.");
                                 Thread.sleep(3000);
                                 System.out.println("Algumas naves se viraram para a nossa posição, a formação inimiga está se desfazendo. É hora de atacar!");
@@ -469,12 +470,12 @@ public class Militar extends Personagem implements Combate{//aqui temos a aplica
                 Thread.sleep(6000);
                 System.out.println("Eles chegaram. O horizonte azul é tomado por um enxame de naves gigantescas. Como se Mercúrio estivesse no lugar da Lua.");
                 Thread.sleep(4000);
-                
+                String decisao;
                 do {
                     System.out.println("Nossos radares indicam que uma primeira onda está prestes a cruzar a atmosfera.");
                     Thread.sleep(3000);
                     System.out.println("Deseja iniciar um ataque antes que eles cheguem mais perto? (s/n)");
-                    String decisao = scanner.next();
+                    decisao = scanner.next();
                     scanner.nextLine();
             
                     if (decisao.equalsIgnoreCase("s")) {

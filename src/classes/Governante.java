@@ -287,7 +287,7 @@ public void tomarDecisoes() {
             Thread.sleep(2000);
             System.out.println("Ponto forte: Seria como uma 'capa da invisibilidade' a nível global, protegendo o planeta de ataques de lasers e sondas localizadoras. E essa tecnologia poderia ser utilizada posteriormente pela humanidade para criar a Esfera de Dyson em nosso Sol, subindo na escala de Kardashev para civilizações mais avançadas.");
             Thread.sleep(3000);
-            System.out.println("Ponto fraco: É uma ideia extremamente cara e demorada. Além disso, impedindo parte da apssagem da luz solar, o impacto ambiental seria muito elevado, se não arrumarmos solução para isso, podendo afetar o clima da Terra para sempre.\n");
+            System.out.println("Ponto fraco: É uma ideia extremamente cara e demorada. Além disso, impedindo parte da passagem da luz solar, o impacto ambiental seria muito elevado, se não arrumarmos solução para isso, podendo afetar o clima da Terra para sempre.\n");
             Thread.sleep(5000);
             System.out.println("\n");
 
