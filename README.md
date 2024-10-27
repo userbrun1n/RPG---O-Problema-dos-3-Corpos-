@@ -19,7 +19,7 @@ Esperamos que você se divirta bastante!
 - `Bruno Augusto dos Santos Pereira`
 - `Fernando Ferreira Mendes`
 
-> Alunos do 4° semestre do Bacharelado de Engenharia da Computação, do Centro Universitátio Senac
+> Alunos do 4° semestre do Bacharelado de Engenharia da Computação, do Centro Universitário Senac
 
 ## Pré Requisitos
 
